@@ -1,8 +1,14 @@
-!!Some little exercises
+!!Brief presentation of Petitparser
 
 %+Pillar logo>figures/pillar.png|width=30+
 
-[[[
-word := #letter asPParser plus. 
-word parse: 'abc' 
-]]]
+
+Building parsers to analyze and transform data is a common task in software development. In this chapter we present a powerful parser framework called PetitParser. PetitParser combines many ideas from various parsing technologies to model grammars and parsers as objects that can be reconfigured dynamically. PetitParser was written by Lukas Renggli as part of his work on the Helvetia system but it can be used as a standalone library.
+
+!!!Writing parsers with PetitParser
+
+PetitParser is a parsing framework different from many other popular parser generators. PetitParser makes it easy to define parsers with Smalltalk code and to dynamically reuse, compose, transform and extend grammars. We can reflect on the resulting grammars and modify them on-the-fly. As such PetitParser fits better the dynamic nature of Smalltalk.
+
+Furthermore, PetitParser is not based on tables such as SmaCC and ANTLR. Instead it uses a combination of four alternative parser methodologies: scannerless parsers, parser combinators, parsing expression grammars and packrat parsers. As such PetitParser is more powerful in what it can parse. Let’s have a quick look at these four parser methodologies:
+
+;""Scannerless Parsers c "" combine what is usually done by two independent tools (scanner and parser) into one. This makes writing a grammar much simpler and avoids common problems when grammars are composed.

@@ -1,6 +1,3 @@
-!Petit Parser: a Tutorial
-
-
 ${inputFile:path=Chapters/GettingStarted/GettingStarted.pillar}$
 
 ${inputFile:path=Chapters/ParsingC/ParsingC.pillar}$
