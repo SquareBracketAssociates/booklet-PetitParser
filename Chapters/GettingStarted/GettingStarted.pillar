@@ -15,10 +15,9 @@ Furthermore, PetitParser is not based on tables such as SmaCC and ANTLR. Instead
 
 ;""Parser Combinators "" are building blocks for parsers modeled as a graph of composable objects; they are modular and maintainable, and can be changed, recomposed, transformed and reflected upon.
 
-;""Parsing Expression Grammars "" (PEGs) provide the notion of ordered choices. Unlike parser combinators, the ordered choice of PEGs  always follows the first matching alternative and ignores other alternatives. Valid input always results in exactly 
-one parse-tree, the result of a parse is never ambiguous.
+;""Parsing Expression Grammars "" (PEGs) provide the notion of ordered choices. Unlike parser combinators, the ordered choice of PEGs  always follows the first matching alternative and ignores other alternatives. Valid input always results in exactly one parse-tree, the result of a parse is never ambiguous.
 
-;""Packrat Parsers ""  give linear parse-time guarantees and avoid common problems with left-recursion in PEGs. 
+;""Packrat Parsers "" give linear parse-time guarantees and avoid common problems with left-recursion in PEGs. 
 
 
 !!! Get ready
@@ -37,4 +36,5 @@ Larcheveque/ParserTutorial';
     onWarningLog;
 load.
 
-]]]
+]]].
+

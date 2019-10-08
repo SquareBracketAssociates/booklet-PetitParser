@@ -1,5 +1,7 @@
 ${inputFile:path=Chapters/GettingStarted/GettingStarted.pillar}$
 
+${inputFile:path=Chapters/WrittingSimpleGrammar/WrittingSimpleGrammar.pillar}$
 ${inputFile:path=Chapters/ParsingC/ParsingC.pillar}$
+
 
 

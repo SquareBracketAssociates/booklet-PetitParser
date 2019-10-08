@@ -1,0 +1,12 @@
+!!Writting simple grammar
+
+Writing grammars with PetitParser is as simple as writing Smalltalk code.
+For example:
+
+-a grammar that parses a digit is defined and used as follows:
+
+[[[ |digitParser|
+digitParser := #digit  asPParser  
+digitParser parse: '1'  
+>>$1
+]]]
